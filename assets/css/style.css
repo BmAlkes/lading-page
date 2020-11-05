@@ -1,0 +1,307 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+}
+
+header{
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+.container{
+    width: 990px;
+    display: flex;
+    justify-content: space-between;
+   
+}
+.logo{
+    display: flex;
+    align-items: center;
+}
+.logo h2{
+    color: #00BFFF;
+}
+.menu{
+    display: flex;
+    align-items: center;
+}
+
+.logo img{
+    width: 60px;
+    padding: 8px;
+}
+
+nav ul,
+nav li{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul{
+    display: flex;
+}
+nav a{
+    text-decoration: none;
+    display: block;
+    padding: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #000;
+    font-weight: 600;
+}
+
+.svg{
+    color: #000;
+    width: 18px;
+}
+
+nav a:hover{
+    border-bottom: 3px solid #00BFFF ;
+}
+
+.banner{
+    display: flex;
+    justify-content: center;
+    background-image: url('https://images.unsplash.com/photo-1520256862855-398228c41684?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 670px;
+
+}
+ .banner-headline {
+    width:600px ;
+}
+
+.banner-headline h1{
+    color: #FFF;
+    padding: 20px;
+    font-size: 60px;
+    font-weight:bold;
+    
+}
+.banner-headline h1::after{
+    content: '';
+    display: block;
+    width: 150px;
+    height: 2px;
+    background-color:white;
+   
+}
+
+.banner-headline p{
+    color: white;
+    font-weight: bold;
+    line-height: 30px;
+    padding: 20px;
+    width: 380px;
+    margin: 0 20px;
+
+}
+
+.banner-headline button{
+    background-color: rgb(255, 255, 255);
+    border:none;
+    color: #000;
+    font-size: 25px;
+    font-weight: 700;
+    padding: 30px;
+    border-radius: 50px;
+    margin-top: 30px;
+    margin-left: 20px;
+    width: 300px;
+    cursor: pointer;
+}
+.cards{
+    margin-bottom: 60px;
+}
+
+.cards h3{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 30px;
+    padding: 30px 40px;
+    text-transform: uppercase;
+}
+
+.flex-card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+.card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.9);
+  max-width: 250px;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  margin-left: 30px;
+  padding: 20px;
+  
+}
+ .card img{
+     max-width: 90%;
+ }
+ .card h1{
+     font-size: 22px;
+     color: #00BFFF;
+ }
+.card p{
+        font-size: 18px;
+        font-weight: bold;
+        line-height: 20px;
+}
+
+.card button{
+    
+    color: #000;
+    background-color: white;
+    border: 1px solid #00BFFF;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 18px;
+    border-radius: 25px;
+    cursor: pointer;
+
+}
+ .card:hover {
+     box-shadow: 1px 1px 10px 0px #000, -1px -1px 10px 1px #000;
+     transform:scale(1.2);
+
+
+ }
+ .card:hover button{
+     background-color: #00BFFF;
+     color: #FFF;
+ }
+
+ #geral{
+     background-image: url('../img/background-header.jpg');
+     background-position: center;
+     background-size: cover;
+     background-repeat: no-repeat;
+     margin-top:50px ;
+     display: flex;
+     justify-content: center;
+     margin-top: 30px;
+ }
+
+ .rightside{
+     width: 50%;
+ }
+
+ .leftside{
+     width: 50%;
+ }
+
+ .shoespic{
+    max-width: 400px;
+    margin: auto;
+
+ }
+ .shoespic img{
+     width: 400px;
+     margin-top: 5px;
+ }
+
+ .leftside h2{
+    color: rgb(77, 77, 77);
+    padding: 20px;
+    font-size: 30px;
+    font-weight:bold;
+ }
+
+ .leftside p{
+    color: rgb(77, 77, 77);
+    font-weight: bold;
+    line-height: 30px;
+    padding: 20px;
+    width: 380px;
+    margin: 0 20px;
+ }
+
+ .leftside a{
+     color: #00BFFF;
+     text-decoration: none;
+     display: block;
+     font-size: 25px;
+     padding: 15px;
+    
+ }
+
+ .leftside a img{
+     width: 18px;
+ }
+
+ @media(max-width:600px){
+     .container{
+        flex-direction: column;
+     }
+     .logo{
+         justify-content: center;
+     }
+     header{
+         height: 160px;
+     }
+     .menu{
+         width: 350px;
+         margin: 0 auto;
+     }
+     nav ul{
+         flex-direction: row;
+         justify-content: center;
+         flex-wrap: wrap;
+         width: 300px;
+     }
+     nav a{
+        
+         font-size: 15px;
+
+     }
+
+     nav a img{
+         display: none;
+     }
+
+     .banner-headline{
+         width: 300px;
+     }
+     .banner-headline h1{
+         font-size: 30px;
+     }
+     .banner-headline p{
+         width: 300px;
+     }
+     .banner-headline button{
+         width: 170px;
+         font-size: 18px;
+     }
+     .card{
+        max-width: 300px;
+     }
+     .shoespic img{
+         width: 300px;
+
+     }
+     .shoespic{
+         margin-left: 15%;
+     }
+     .rightside{
+         width: 100%;
+     }
+     .leftside{
+         width: 100%;
+         text-align: center;
+     }
+ }
